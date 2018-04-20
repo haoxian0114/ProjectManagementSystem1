@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="34f3a25b52d341f789569e04cac47adf" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.CLIENT" Width="1.5" PointX="6" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.CLIENT_PROJECT" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.DELIVERABLE" Width="1.5" PointX="8.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.DEPARTMENT" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.EMPLOYEE" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.EMPLOYEE_DELIVERABLE" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.PROJECT" Width="1.5" PointX="6" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.TIMESHEET" Width="1.5" PointX="10.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.database_firewall_rules" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_CLIENT_PROJECT_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_CLIENT_PROJECT_PROJECT" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_DELIVERABLES_PROJECT" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_EMPLOYEE_DELIVERABLE_DELIVERABLES" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_TIMESHEET_DELIVERABLES" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_PROJECT_DEPARTMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_EMPLOYEE_DELIVERABLE_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_PROJECT_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_TIMESHEET_EMPLOYEE" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.User_login" Width="1.5" PointX="3" PointY="9" />
+        <AssociationConnector Association="ProjectManagementSystemModel.FK_User_login_EMPLOYEE" />
+        <EntityTypeShape EntityType="ProjectManagementSystemModel.EMPLOYEE_TYPES" Width="1.5" PointX="5.375" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
